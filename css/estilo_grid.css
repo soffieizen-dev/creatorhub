@@ -1,0 +1,66 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.grid{
+    font-size: 1.875rem;
+display: grid;
+width: 100%;
+height: 100vh;
+gap: 10px;
+/*grid-template-columns: repeat(6, 1fr);*/
+grid-template-rows: 150px 150px 150px 150px;
+grid-template-areas: 
+"div1 div1 div2 div2"
+"div3 div3 div5 div5"
+"div4 div4 div6 div6"}
+
+@media(max-width: 1280px){.grid{grid-template-areas: 
+"div1 div1 div1"
+"div2 div2 div3"
+"div4 div5 div6"
+"div4 div5 div6";}}
+
+@media(max-width: 768px){.grid{grid-template-areas: 
+"div1 div1 div1"
+"div2 div2 div2"
+"div3 div4 div5"
+"div3 div4 div5"
+"div6 div6 div6";}}
+
+@media(max-width: 320px){.grid{grid-template-areas: 
+"div1 div1"
+"div2 div2"
+"div3 div3"
+"div4 div4"
+"div5 div5"
+"div6 div6";}}
+
+
+.grid .div1{
+    background-color: #fb00ff;
+    grid-area: div1;
+}
+.grid .div2{
+    background-color: #3e3b32; 
+    grid-area: div2;
+}
+.grid .div3{
+    background-color: #ea0eb3;
+    grid-area: div3;
+}
+.grid .div4{
+    background-color: #3e3b32; 
+    grid-area: div4;
+}
+.grid .div5{
+    background-color: #ec14cb;
+    grid-area: div5;
+}
+.grid .div6{
+    background-color: #3e3b32; 
+    grid-area: div6;
+}

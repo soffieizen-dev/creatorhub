@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+
+   height: 200px;
+   background-color: #ff00e6;
+}
+
+.nav_flex {
+   display: flex;
+   gap: 20px;
+}
+
+.nav_flex li{
+   list-style: none;
+   font-size: 25px;
+   color: rgb(253, 254, 255);
+}
+
+.nav_flex li a{
+   text-decoration: none;
+   color: rgb(253, 254, 255);
+}
+
+.logo{
+   width: 90px;
+   height: 90px;
+   background-image: url(../img/silhouette-of-a-person-with-a-flower-woman-icons-pink-doll-pink-doll-icons-silhouette-of-a-woman-in-pink-color-illustration-free-vector.jpg);
+   background-size: cover;
+   background-position: center;
+   border-radius: 50%;
+}
+div {
+   height: 150px;
+   width: 150px;
+   background-color: #ff7bf2;
+   color:aliceblue;
+   font-size: 3.125rem;
+}
+
+.flex_container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+
+   /*Eje principal*/
+   justify-content: space-around;
+   align-content: center;
+   align-content: space-around;
+
+   /*Eje secundario*/
+   height: 600px;
+   background-color: #fccdf5;
+}
