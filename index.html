@@ -13,14 +13,14 @@
 <body>
 <div class="site">
 <header class="topbar">
-<div class="brand">✦ CREATOR HUB ✦</div>
+<a href="./index.html"><img class="logo" src="img/logo.jpg" alt="Creator Hub"></a>
 <nav>
-<a href="#explorar">Explorar creadores</a>
-<a href="#quiz">¿Qué creator sos?</a>
-<a href="#trending">Trending</a>
-<a href="#fav">Favoritos</a>
+<a href="./index.html" class="activo">Inicio</a>
+<a href="explorar.html">Explorar creadores</a>
+<a href="quiz.html">¿Qué creator sos?</a>
+<a href="favoritos.html">Favoritos</a>
 </nav>
-<div class="actions"><button class="ico">⌕</button><button class="ico">♡</button></div>
+<div class="actions"><a class="ico" href="explorar.html">⌕</a><a class="ico" href="favoritos.html">♡</a></div>
 </header>
 
 <section class="hero">
@@ -28,7 +28,7 @@
 <h1>TU PRÓXIMA<br>INSPIRACIÓN<br>ESTÁ ACÁ</h1>
 <div class="hero-copy">
 <p><b>Descubrí creadores.<br>Descubrí tendencias.<br>Descubrí tu perfil.</b><br><br>Encontrá creadores según tus intereses, plataformas y audiencia.</p>
-<a class="cta" href="#explorar">Explorar creadores →</a>
+<a class="cta" href="explorar.html">Explorar creadores →</a>
 </div>
 </div>
 </section>
@@ -46,7 +46,7 @@
 <li>Seguidores y tipo de contenido</li>
 <li>Público y audiencia</li>
 </ul>
-<button class="pill-btn">⌕ Buscar un creador</button>
+<a class="pill-btn" href="explorar.html">⌕ Buscar un creador</a>
 </div>
 <div class="card black" id="quiz">
 <div class="card-h"><span class="i">☷</span><h3>¿Qué creator sos?</h3></div>
@@ -59,7 +59,7 @@
 <div class="beauty">
 <div class="beauty-top"><span>☆</span><b>BEAUTY CREATOR</b></div>
 <p>Tu contenido estaría enfocado en belleza, tendencias y lifestyle.</p>
-<a href="#">Descubrí tu perfil →</a>
+<a href="quiz.html">Descubrí tu perfil →</a>
 </div>
 </div>
 <div class="card" id="trending">
@@ -109,15 +109,17 @@
 <h2>Descubrí nuevos<br>creadores cada<br>semana</h2>
 <p>Recibí tendencias y recomendaciones en tu mail.</p>
 </div>
-<div class="news-r">
+<form class="news-r" action="#gracias">
 <label>Tu email</label>
-<input placeholder="hola@email.com" type="email">
-<button class="cta">Suscribirme</button>
-</div>
+<input name="email" placeholder="hola@email.com" type="email" required>
+<button class="cta" type="submit">Suscribirme</button>
+<p class="gracias" id="gracias">¡Gracias por suscribirte! Te vamos a escribir cada semana ♡</p>
+</form>
 </section>
 
 <footer>
-<div class="brand">✦ CREATOR HUB ✦</div>
+<a href="index.html"><img class="logo" src="img/logo.jpg" alt="Creator Hub"></a>
+<div class="footer-links"><a href="portfolio.html">Portfolio</a><a href="portfolio.html#contacto">Contacto</a></div>
 <div class="follow"><span>Seguinos</span><span class="i">◎</span><span class="i">♪</span><span class="i">▷</span><span class="i">𝕏</span></div>
 </footer>
 </div>
